@@ -1,0 +1,389 @@
+.list-body {
+    box-sizing: border-box;
+    background: #DFF1FB;
+    font-family: 'Noto Sans TC', sans-serif, 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+form,
+fieldset {
+    margin: 0;
+
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+/*36px*/
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/*32px*/
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/*24px*/
+h4 {
+    font-size: 1.375rem;
+    font-weight: 100;
+}
+
+/*22px*/
+h5 {
+    font-size: 1.125rem;
+    font-weight: 100;
+}
+
+/*18px*/
+h6 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/*16px*/
+p {
+    font-size: 0.875rem;
+    font-weight: 100;
+}
+
+/*14px*/
+
+.svg-wave-bottom {
+    width: 100%;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.h1-text {
+    text-align: center;
+}
+
+
+.h1-blue {
+    color: #043F98;
+    font-weight: bold;
+}
+
+
+.ad-4 {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    padding-top: 80px;
+}
+
+
+.ad-4 .webcontainer2 {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.h1-bg {
+    max-width: 600px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin: 0 auto 40px;
+    background: url("../svg/svg-h2-1.svg") center center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-wrapper-big-big {
+    background: url("../svg/svg-bg-string.svg")center top;
+    background-size: cover;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+
+@media screen and (max-width:800px) {
+    .ad-4 {
+        padding: 40px 0;
+        min-height: 850px;
+    }
+    .ad-4 .h1-bg {
+        background: #DFF1FB;
+        margin-bottom: 0;
+    }
+    .ad-4 .webcontainer2{
+        padding: 0 15px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .h1-bg {
+    
+        padding-top: 50px;
+        
+    }
+}
+/* --------揪團列表頁 card3 商品小卡--------*/
+
+.card3{
+    max-width: 328px;
+    width: 33%;
+    background-color: white;
+    margin-bottom: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.card3:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 5px 15px #e5e5e5;
+}
+.card3Top{
+    width:100%;
+    height: 219px;
+    background: url("../img/1-kv.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.card3TopTwo{
+    width:100%;
+    height: 219px;
+    background: url("../img/4-kv.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.card3TopThree{
+    width:100%;
+    height: 219px;
+    background: url("../img/8-kv.jpg") center center no-repeat;
+    background-size: cover;
+}
+.card3_date_GroupGo{
+    width: 80px;
+    height: 60px;
+    background-color: #FF8066;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+}
+
+.card3MikeMGtitle{
+    margin-left: 10px;
+}
+
+
+
+.card3_date_GroupGo .card3mon{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.56;
+    color: white;
+}
+
+.card3_date_GroupGo .card3date{
+    line-height: 0.75;
+    letter-spacing: 2.15px;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    margin-left: 3px;
+}
+
+
+.card3Down{
+    width: 100%;
+    padding: 20px;
+
+}
+
+.card3DownBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card3title{
+    font-size: 22px;
+    font-weight: 500;
+    width:100%;
+
+}
+
+.card3title:hover{
+    color: #7AC943;
+}
+
+
+.card3titleSmall{
+    font-size: 16px;
+    font-weight: 500;
+    width:100%;
+    color: #2186c4;
+}
+
+.card3IntroText p{
+    font-size: 12px;
+    text-align: left;
+    color: #707070;
+    font-weight: 100;
+}
+.card3IntroIcon{
+    display: flex;
+    flex-direction:column;
+    font-size: 12px;
+    max-width: 300px;
+}
+
+.card3Icon{
+    display: flex;
+    color:#707070;
+    padding-top:6px;
+}
+.card3Icon img{
+    margin-right: 8px;
+}
+.card3Price{
+    display: flex;
+    align-items: center;
+}
+.card3Price p{
+    color: #043F98;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align:end;
+}
+.card3Price .price{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+@media screen and (max-width:800px){
+    .card3{
+        width:100%;
+        max-width: 800px;
+        margin: 0 auto 15px;
+        display: flex;
+        min-height: 120px;
+
+    }
+    .card3_date_GroupGo{
+        padding-top: 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .card3_date_GroupGo .card3mon{
+        font-size: 12px;
+        line-height: 1.5;
+        
+    }
+
+    .card3_date_GroupGo .card3date{
+        margin-bottom: 0px;
+        letter-spacing: 0.6px;
+        line-height: 0.56;
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .card3Top{
+        width:150px;
+        height: 150px;
+        background: url("../img/1-kv.jpg") center center no-repeat;
+        background-size: cover;
+    }
+
+    .card3TopTwo{
+        width:150px;
+        height: 150px;
+        background: url("../img/4-kv.jpg") center center no-repeat;
+        background-size: cover;
+    }
+
+    .card3TopThree{
+        width:150px;
+        height: 150px;
+        background: url("../img/8-kv.jpg") center center no-repeat;
+        background-size: cover;
+    }
+
+    .card3Down{
+        width: 70%;
+        margin-top:0;
+        position:relative;
+        padding: 0;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .card3title{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .card3name p{
+        margin: auto auto;
+    }
+
+    .card3IntroText p{
+        line-height: 1.5rem;
+        color: #3f464d;
+        font-size: 12px;
+
+    }
+    .card3IntroIcon{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+    .card3IntroIcon img{
+        margin-right:5px;
+    }
+    .card3IntroIcon p{
+        font-size: 12px;
+        color: #3f464d;
+        line-height: 1.5;
+
+    }
+
+    .card3Price{
+        font-size: 14px;
+        font-weight: normal;
+        align-self: flex-end;
+    }
+    .card3Price .price{
+        font-size: 20px;
+        font-weight: bold;
+        /*margin-left: 5px;*/
+        line-height: 1.5;
+    }
+
+    .card2star{
+        height: 10px;
+    }
+
+    .card3titleSmall{
+        font-size: 12px;
+        font-weight: 500;
+        width:100%;
+        color: #2186c4;
+        margin-top: 5px;
+    }
+}

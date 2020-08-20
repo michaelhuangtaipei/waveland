@@ -1,0 +1,139 @@
+
+
+.box{
+    position: relative;
+    height: 100vh;
+}
+
+
+.svg-kv-wave{
+    /* position: absolute; */
+}
+
+footer,
+.copyright {
+    width: 100%;
+    padding: 0 111px;
+    position: absolute;
+    display: flex;
+
+}
+
+
+.svg-kv-wave{
+    width: 100%;
+    position:relative;
+    bottom: -323px;
+    /* margin: 50px 0; */
+    z-index: 1;
+}
+
+
+footer {
+    padding-top: 100px;
+    background: url(/img/bg.png) ;
+     background-color: rgb(255, 255, 255);
+    /* height: 300px; */
+    bottom: 60px;
+   
+}
+
+.copyright {
+    background: url(/img/bg.png) ;
+    margin: 0;
+    height: 60px;
+    bottom: 0;
+}
+
+
+.footer-logo {
+    height: 82px;
+}
+
+.social-software,
+.web-map-aboutus,
+.web-map-info {
+    margin: 0 150px 0 0;
+}
+
+
+.service-info {
+    margin: 0 0 0 0;
+}
+
+
+
+.social-software {
+    text-align: center;
+    align-items: center;
+   
+}
+
+.social-software p {
+    color: #043F98;
+    font-size: 1.1250rem;
+    margin: 22px 0 0 0;
+}
+
+
+.icon-grop img {
+    height: 40px;
+    margin: 40px 22px;
+}
+
+.web-map,
+.web-map a {
+    display: flex;
+    color: #3F464D;
+}
+
+.web-map-p {
+    font-size: 1rem;
+    margin: 65px 0 0;
+}
+
+.web-map a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    margin: 23px 0 0 0;
+}
+
+
+.web-map-aboutus,
+.web-map-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.service-info-p1,
+.service-info-p2,
+.service-info-p3 {
+    color: #043F98;
+    font-size: 1rem;
+}
+
+.service-info-p1 {
+    margin: 72px 0 0 0;
+}
+
+.service-info-p2 {
+    margin: 20px 0 0 0;
+}
+
+.service-info-p3 {
+    font-size: 1.5rem;
+    margin: 20px 0 0 0;
+
+}
+
+.service-info-p4 {
+    color: #777777;
+    font-size: 0.875rem;
+}
+
+.copyright-p{
+    width: 100%;
+    /* text-align: center; */
+}
+

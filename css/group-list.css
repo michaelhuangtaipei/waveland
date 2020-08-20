@@ -1,0 +1,1100 @@
+body {
+    box-sizing: border-box;
+    background: #DFF1FB;
+    font-family: 'Noto Sans TC', sans-serif, 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+.kv {
+    background: url("../img/group-list-kv.jpg") center center no-repeat;
+    background-size: cover;
+    height: 720px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.kv-wave-bottom {
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+    opacity: 60%;
+    width: 100%;
+    height: 200px
+}
+
+.kv-wave-top {
+    position: absolute;
+    bottom: -90px;
+    height: 250px;
+    width: 100%
+}
+
+.kv-logo-1 {
+    max-width: 350px;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+
+.bread a{
+    position: absolute;
+    bottom: -100px;
+    margin-left: 128px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #AFAFAF;
+}
+
+.ad-1 {
+    width: 100%;
+    height: 800px;
+
+    background: white;
+    padding: 128px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 60%;
+    height: 550px;
+    background: url("../img/ad1.jpg") center center no-repeat;
+    background-size: cover;
+
+}
+
+.slogen-8 {
+    position: absolute;
+    width: 90%;
+    min-width: 250px;
+    right: 35%;
+    bottom: 30%;
+}
+
+.right {
+    padding: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    position: relative;
+}
+
+.right .ad-slogen {
+    padding: 0 10px;
+    border-left: 2px solid #043f98;
+    display: inline-block;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    font-family: 'Noto Sans TC', sans-serif, 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .slogen-8 {
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bread {
+        display: none;
+    }
+
+    .ad-1 {
+        padding: 0 15px;
+        flex-direction: column;
+        margin-top: 50px;
+        height: 250px;
+    }
+
+    .left {
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .right {
+        width: 100%;
+        flex-direction: row;
+        padding: 10px 0;
+    }
+
+    .slogen-8 {
+        display: none;
+    }
+}
+
+.btns {
+    padding: 0 25px;
+    height: 40px;
+    line-height: 2.5rem;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Noto Sans TC', sans-serif, 微軟正黑體, Arial, Helvetica, sans-serif;
+    border: 1px solid #043f98;
+
+}
+
+a.btn-blue {
+    background: #043f98;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .kv-wave-top {
+        height: 200px;
+        bottom: -60px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .kv {
+        height: 260px;
+        background: url("../img/2-kv.jpg") center bottom no-repeat;
+        background-size: cover
+    }
+
+    .kv-logo-1 {
+        display: none;
+    }
+
+    .kv-wave-top {
+        height: 130px;
+        bottom: -50px;
+    }
+
+    .kv-wave-bottom {
+        height: 180px;
+        bottom: -100px;
+    }
+}
+
+.ad-2 {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    padding-top: 80px;
+}
+
+.svg-wave-bottom {
+    width: 100%;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.h1-bg {
+    max-width: 600px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin: 0 auto 40px;
+    background: url("../svg/svg-h2-1.svg") center center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-text {
+    text-align: center;
+}
+
+
+.h1-blue {
+    color: #043F98;
+    font-weight: bold;
+}
+
+.card1 {
+    display: flex;
+    max-width: 1024px;
+    max-height: 420px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16), 0 -1px 6px 0 rgba(0, 0, 0, 0.16);
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.card1:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card1:hover .card1RightDown {
+    color: #FF8066;
+}
+
+.card1Left {
+    max-width: 663px;
+    width: 100%;
+    height: 420px;
+
+}
+
+
+.card1_date_GroupGo {
+    width: 79px;
+    height: 74px;
+    background-color: #043F98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card1_date_GroupGo .card1mon {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.56;
+    color: white;
+}
+
+.card1_date_GroupGo .card1date {
+    margin-top: 5px;
+    line-height: 0.58;
+    letter-spacing: 2.15px;
+    font-size: 43px;
+    font-weight: 900;
+    color: white;
+}
+
+
+.card1Right {
+    border-bottom: 7px solid #043F98;
+    width: 100%;
+    max-width: 361px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.card1RightBox {
+    width: 100%;
+    max-height: 400px;
+    font-size: 24px;
+    line-height: 1.11;
+    color: #262626;
+}
+
+.card1name p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.11;
+    color: #262626;
+    margin-left: 12px;
+
+}
+
+.card1IntroText p {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: #3f464d;
+    font-weight: 100;
+    margin-left: 12px;
+}
+
+.card1IntroIcon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 23px;
+    margin-left: 12px;
+}
+
+.card1Icon {
+    display: flex;
+    color: #262626;
+    margin-right: 14px;
+    line-height: 1.67;
+}
+
+.card1Icon img {
+    margin-right: 8px;
+
+}
+
+.card1Price {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 12px;
+
+
+}
+
+.card1Price p {
+    color: #043F98;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.card1Price .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.card1RightDown {
+    color: #d9d9d9;
+    font-size: 32px;
+    line-height: 47px;
+    position: absolute;
+    bottom: 1.2%;
+    right: 1.7%;
+    transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 375px) {
+    .card1 {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .card1Left {
+        width: 100%;
+        height: 154px;
+
+    }
+
+    .card1_date_GroupGo {
+        width: 60.3px;
+        height: 56.5px;
+        padding: 3px 0 12px 0;
+    }
+
+    .card1_date_GroupGo .card1mon {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+
+    .card1_date_GroupGo .card1date {
+        /* margin-top: 5px; */
+        letter-spacing: 0.6px;
+        line-height: 0.56;
+        font-size: 32px;
+        font-weight: 900;
+    }
+
+    .card1Right {
+        width: 100%;
+        height: 120px;
+
+    }
+
+    .card1RightBox {
+        width: 100%;
+        max-height: 120px;
+        margin: auto auto;
+    }
+
+    .card1title {
+        display: flex;
+        margin-top: 11px;
+        align-items: center;
+
+    }
+
+    .card1title h3,
+    p {
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 0.75;
+        margin: auto;
+        color: #262626;
+    }
+
+    .card1name p {
+        margin: auto auto;
+    }
+
+    .card1IntroText {
+        margin-left: -5px;
+        /* padding-left: 8px; */
+    }
+
+    .card1IntroText p {
+        margin-top: 7px;
+        line-height: 1.5rem;
+        color: #3f464d;
+    }
+
+    .card1IntroIcon {
+        margin-top: 1px;
+        margin-left: 10px;
+    }
+
+    .card1IntroIcon p {
+        font-size: 10px;
+        color: #3f464d;
+    }
+
+    .card1Price {
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: 9px;
+        line-height: 1.43;
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        padding-bottom: 4px;
+        /* 另外加的*/
+    }
+
+    .card1Price p {
+        text-align: left;
+        margin: 0;
+    }
+
+    .card1Price .price {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 5px;
+        line-height: 1.5;
+    }
+
+    .card1RightDown {
+        display: none;
+    }
+}
+
+/* -------------card1 CSS結束 ---------------*/
+
+@media screen and (max-width: 375px) {
+    .ad-2 {
+        height: 420px;
+        padding: 40px 15px;
+    }
+
+    .h1-bg {
+        padding-top: 0;
+    }
+
+    .ad-2 .h1-bg {
+        background: #DFF1FB;
+        margin-bottom: 0;
+
+    }
+
+    .h1-text h1 {
+        background: url(../svg/svg-h2-mobile.svg) center center no-repeat;
+        padding: 0 100px;
+        font-size: 1.375rem;
+
+    }
+
+    .h1-text h4 {
+        font-size: 0.875rem;
+    }
+
+}
+
+.ad-3 {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+    background: white;
+    padding-top: 80px;
+}
+
+.ad-3 .h1-bg {
+    background: url("../svg/svg-h2-2.svg") center center no-repeat;
+
+}
+
+@media screen and (max-width: 375px) {
+    .ad-3 {
+        height: 330px;
+        padding: 40px 15px;
+    }
+
+    .ad-3 .h1-bg {
+        background: white;
+        margin-bottom: 0;
+
+    }
+
+
+}
+
+
+/* --------揪團列表頁 card2 限時優惠--------*/
+.cardOutside {
+    max-width: 1024px;
+    max-height: 634px;
+    background-color: transparent;
+    margin: auto auto;
+}
+
+.card2 {
+    width: 70%;
+    max-width: 656px;
+    height: 634px;
+    background: url("../img/11-kv.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 0 30px 30px;
+    margin-right: 20px;
+}
+
+.card2Right {
+    flex-grow: 1;
+}
+
+.card2Inside {
+    width: 100%;
+    height: 245px;
+    background-color: #ffffff;
+    opacity: 0.85;
+    display: flex;
+    padding: 0 45px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.insideText {
+    max-width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card2cate p {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.11;
+    /* text-indent: -12px; */
+    margin-left: -12px;
+    /*window版上跑版的話，改成12px*/
+}
+
+.card2name p {
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.11;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.card2IntroText p {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: #3f464d;
+    font-weight: 100;
+}
+
+.card2IntroIcon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 23px;
+}
+
+.card2Icon {
+    display: flex;
+    color: #262626;
+    margin-right: 14px;
+}
+
+.card2Icon img {
+    margin-right: 5px;
+
+}
+
+.card2top {
+    display: flex;
+    justify-content: center;
+    min-width: 60px;
+    height: 352px;
+    background: url("../img/3-kv.jpg") center center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.insideTextR {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.card2top:hover .insideTextR {
+    opacity: 1;
+}
+
+.card2down:hover .insideTextR {
+    opacity: 1;
+}
+
+.card2top-inside {
+    width: 10%;
+    height: 10%;
+    background: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+.card2top:hover .card2top-inside {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(11, 11);
+}
+
+.card2down:hover .card2top-inside {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(11, 11);
+}
+
+
+.card2down {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 60px;
+    height: 271px;
+    background: url("../img/13-kv.jpg") center center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .card2 {
+        padding: 0;
+        width: 100%;
+        height: 185px;
+        background: url("../img/13-kv.jpg") center center no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        /*使用小卡排版時，這裡要拿掉，不然會全部疊在一起*/
+    }
+
+    .card2Right {
+        display: none;
+    }
+
+    .card2Inside {
+        /*白色透明框*/
+        width: 100%;
+        height: 80px;
+        background-color: #ffffff;
+        opacity: 0.85;
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+
+    .insideText {
+        width: 100%;
+        height: 100%;
+        padding: 8px 15px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card2cate p {
+        font-size: 14px;
+        /*原本設計是12*/
+        font-weight: normal;
+        /*原本設計是100*/
+        line-height: 0.75;
+        margin-top: 0;
+    }
+
+    .card2name p {
+        margin-top: 3px;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 1.3;
+        margin-left: 8px;
+    }
+
+    .card2IntroText p {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: left;
+        color: #3f464d;
+        font-weight: 100;
+        margin-top: 5px;
+        margin-left: 8px;
+    }
+
+    .cardIntroText p {
+        font-size: 12px;
+        margin-top: 8px;
+        line-height: 1.5;
+    }
+
+    .card2IntroIcon {
+        margin-top: 1px;
+        margin-left: 8px;
+
+    }
+
+    .card2IntroIcon p {
+        font-size: 10px;
+        line-height: 0.7;
+        margin-top: 3px;
+        font-weight: 100;
+
+    }
+
+    .card2top,
+    .card2down {
+        display: none;
+    }
+}
+
+
+/* -------------card2 CSS結束 ---------------*/
+.ad-4 {
+    width: 100%;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 10px;
+}
+
+.ad-4 .h1-bg {
+    background: url("../svg/svg-h2-3.svg") center center no-repeat;
+    padding-bottom: 50px;
+
+}
+
+.ad-4 .list-wrapper-big {
+    background: url(../svg/svg-bg-string.svg) center top;
+    background-size: cover;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.ad-4 .webcontainer {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ad-4 select {
+    outline: none;
+}
+
+.list-selecter {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+
+.list-selecter-title {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.list-selecter .form-list {
+    background: transparent;
+    color: #043F98;
+    border: 1px solid transparent;
+}
+
+@media screen and (max-width: 800px) {
+    .ad-4 {
+
+        padding: 40px 0;
+    }
+
+    .ad-4 .h1-bg {
+        background: #DFF1FB;
+        margin-bottom: 0;
+    }
+
+    .ad-4 .webcontainer {
+        padding: 0 15px;
+    }
+
+
+}
+
+/* --------揪團列表頁 card3 商品小卡--------*/
+
+.card3 {
+    max-width: 328px;
+    width: 33%;
+    background-color: white;
+    margin-bottom: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.card3:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 5px 15px #e5e5e5;
+}
+
+.card3Top {
+    width: 100%;
+    height: 219px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards-img-top {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card3_date_GroupGo {
+    width: 64px;
+    height: 60px;
+    background-color: #043F98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card3_date_GroupGo .card3mon {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.56;
+    color: white;
+}
+
+.card3_date_GroupGo .card3date {
+    line-height: 0.75;
+    letter-spacing: 2.15px;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+}
+
+
+.card3Down {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.card3DownBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card3title {
+    font-size: 18px;
+    font-weight: 100;
+    text-indent: -10px;
+}
+.card3:hover .card3title{
+    font-weight: 700;
+}
+
+a.card3title {
+    text-decoration: none;
+    color: black;
+}
+
+a.card1title {
+    text-decoration: none;
+    color: black;
+}
+
+.card3IntroText p {
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: left;
+    color: #707070;
+    font-weight: 100;
+}
+
+.card3IntroIcon {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    max-width: 300px;
+}
+
+.card3Icon {
+    display: flex;
+    color: #707070;
+    padding-top: 6px;
+}
+
+.card3Icon img {
+    margin-right: 8px;
+}
+
+.card3Price {
+    display: flex;
+    align-items: center;
+}
+
+.card3Price p {
+    color: #043F98;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: end;
+}
+
+.card3Price .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .card3 {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto 15px;
+        display: flex;
+        min-height: 120px;
+
+    }
+
+    .card3_date_GroupGo {
+        padding-top: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .card3_date_GroupGo .card3mon {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .card3_date_GroupGo .card3date {
+        margin-bottom: 5px;
+        letter-spacing: 0.6px;
+        line-height: 0.56;
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .card3Top {
+        width: 35%;
+        min-width: 130px;
+        height: 100%;
+        max-width: 130px;
+
+    }
+
+    .card3Down {
+        width: 100%;
+        margin-top: 0;
+        position: relative;
+
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .card3title {
+        font-size: 16px;
+        font-weight: 100;
+
+    }
+
+    .card3name p {
+        margin: auto auto;
+    }
+
+    .card3IntroText p {
+        line-height: 1.5rem;
+        color: #3f464d;
+        font-size: 12px;
+        padding-top: 6px;
+
+    }
+
+    .card3IntroIcon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card3IntroIcon img {
+        margin-right: 5px;
+    }
+
+    .card3IntroIcon p {
+        font-size: 12px;
+        color: #3f464d;
+        line-height: 1.5;
+
+    }
+
+    .card3Price {
+        font-size: 14px;
+        font-weight: normal;
+        align-self: flex-end;
+    }
+
+    .card3Price .price {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 5px;
+        line-height: 1.5;
+    }
+}
+
+/*@media screen and(max-width: 375px) {*/
+/*   .card3Down.card3title {*/
+/*     width: 190px;*/
+/*     overflow: hidden;*/
+/*     white-space: nowrap;*/
+/*     text-overflow: ellipsis;*/
+/*    }*/
+/*    .card3Down{*/
+/*        max-height: 130px;*/
+/*    }*/
+/*}*/

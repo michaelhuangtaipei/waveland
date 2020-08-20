@@ -1,0 +1,619 @@
+/* --============================整體元素==============================-- */ 
+.form-btns{
+    text-align: center;
+    margin: 50px 0 100px;
+}
+.member-webfooterH{
+    width: 100%;
+    margin-bottom: -150px;
+}
+
+a.btns{
+    padding: 0px 25px;
+    height: 40px;
+    line-height: 40px;   
+    border-radius:30px;
+    display:inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #043f98;
+
+}
+a.btn-blue{
+    background:#043f98;
+    color: white;
+}
+
+a.btn-white {
+    background:white;
+    color: #043f98;
+}
+
+.mem-coupon-used{
+    color: #FF8066;
+}
+
+.mem-coupon-unused{
+    color: #7AC943;
+}
+.member-list-card > img{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+/*-------------member共用------------*/
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main-color {
+    color: #043F98;
+}
+
+body{
+    font-family:'Noto Sans TC', sans-serif,微軟正黑體,Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:1024px) {
+    .wrapper{
+        padding: 0 15px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+
+    .mobile-hide{
+        display: none;
+    }
+
+    a.mobile-hide{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width:576px){
+.mobile-576hide{
+    display: none;
+}
+}
+@media screen and (max-width:375px){
+    .mobile-375hide{
+        display: none;
+    }
+    }
+
+ /* --------------頁面主視覺------------- */
+.member-kv {
+    background: url("../img/member-bg.jpg") center center no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+ }
+
+ .member-kv .kv-wave {
+     position: absolute;
+     bottom: 0px;
+     width: 100%;
+     height: 150px;
+
+ }
+
+ @media screen and (max-width:768px) {
+    .member-kv {
+        height: 350px;
+
+    }
+    .member-kv .kv-wave {
+        height: 100px;
+    } 
+ }
+
+
+
+/* --------------個人頁card-------------- */
+.member-float-card{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 180px 15px 0;
+}
+
+.member-card {
+    border: 1px solid #CECECE;
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 1024px;
+    padding: 40px 40px 25px;
+    margin: 0 auto;
+}
+
+.member-card-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/*------------個人照片-----------*/
+.member-photo {
+    position: relative;
+}
+
+.member-photo img {                          /*照片大小*/
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: #CECECE;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.member-photo .icon-change-photo{            /*--遮罩--*/
+    visibility: collapse;
+    background: rgba(99, 99, 99, 0.7);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    line-height: 55px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.member-photo:hover .icon-change-photo{     /*遮罩hover*/
+    visibility: visible;
+}
+.icon-change-photo i{                       /*-- icon --*/
+    visibility: collapse;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    transition: 0.5s;
+
+
+}
+.member-photo:hover .icon-change-photo i{   /*icon hover*/
+    visibility: visible;
+    transition: 0.5s;
+    transform: scale(1.1);
+
+}
+
+
+.straight-line {
+    width: 2px;
+    height: 100px;
+    background: #CECECE;
+    margin: 0 40px;
+}
+
+
+@media screen and (max-width:576px){
+.member-photo img{
+    width: 70px;
+    height: 70px;
+}
+.member-photo .icon-change-photo{
+    width: 70px;
+    height: 70px;
+}
+.icon-change-photo i{                       
+    margin-top: 26px;
+    font-size: 18px;
+}
+
+}
+
+
+/*----------個人頁內容------------*/
+.member-card-info{
+    flex-grow: 1;
+    margin-top: -10px;
+}
+.mem-card-infoBOX{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.member-card-info h4{
+    font-weight: 500;
+    font-size: 24px;
+    /* margin-bottom: 20px; */   /*佳文改*/
+}
+.fa-edit::before{
+    visibility: collapse;
+    font-size:14px ;
+    margin-right: 20px;
+}
+.member-card-info:hover .fa-edit::before{
+    visibility: visible;
+}
+
+.mem-card-medal{
+    /* max-width: 90px; */
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.mem-card-medal img{
+    width: 40px;
+    height: 40px;
+}
+.member-card-info p{
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.member-card-info img {             /*-- 徽章 --*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 10px 0 0;
+}
+.seeMore{
+    color: #043f98;
+    text-decoration: none !important;
+}
+.seeMore:hover{
+    color: #7AC943;
+
+}
+.member-seemore{
+    text-align: center;
+}
+
+.member-seemore a{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    /* color: #043f98; */
+}
+
+
+@media screen and (max-width:768px){
+    .member-card {
+        padding: 20px;
+    }
+    .member-card-area {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .member-photo{
+        margin-right: 20px;
+    }
+
+    .member-photo .icon-change-photo{
+        bottom: 0;
+    }
+
+    .straight-line{
+        display: none;
+    }
+}
+@media screen and (max-width:576px){
+.member-card-info h4{
+    padding: 5px 0;
+    font-size: 18px;
+}
+.member-card-info img {
+    width: 20px;
+    height: 20px;
+}
+.mem-card-medal{
+    margin-left: 0;
+    padding: 5px 0;
+}
+.member-seemore a{
+    font-size: 16px;
+    font-weight: 300;
+}
+}
+@media screen and (max-width:375px){
+.member-photo{
+    align-self: flex-start;
+}
+.member-card-info h4{
+    padding-top: 10px;
+}
+}
+
+/*個人頁lightbox*/
+.member-card-lightbox{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    transition: .5s;
+    padding: auto 15px;
+    z-index: 99;
+
+}
+
+.member-card-lightbox .member-card{
+    margin-top: 120px;
+    background: #ffffff;
+    
+}
+
+.toggle-area{
+    height: 40vh;
+    overflow: auto;
+    transition: .5s;
+    background: #f3f3f398;
+    border-top: 1px solid rgba(230, 230, 230, 0.5);
+    border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+}
+
+.toggle-area h4{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.closeBtn{
+   text-align: center;
+   margin-top: 20px;
+
+}
+
+
+/* lightbox active效果 */
+
+.member-card-lightbox.active{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+
+
+/*評論card*/
+.comment-card{
+    border-top: 1px solid #CECECE;
+    padding: 30px;
+    display: flex;
+}
+
+.comment-card figure{
+    text-align: center;
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+
+.comment-card p{
+    margin-top: 10px;
+}
+
+.comment-card figure img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.comment-card figure p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.comment-content img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.comment-content h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.comment-content .comment-text{
+    overflow:hidden;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-weight: 100;
+}
+
+.comment-content .comment-text.active{
+    -webkit-line-clamp: 10;
+}
+
+.comment-content .comment-date{
+    color: #AFAFAF;
+ 
+}
+
+@media screen and (max-width:768px){
+    .comment-card{
+        flex-direction: column;
+    }
+
+    .comment-card figure{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+
+
+/* 功能列 */
+.member-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto 100px;
+    max-width: 1024px;
+    border: 1px solid #CECECE;
+    padding: 10px 30px;
+}
+
+.btn-line {
+    height: 80px;
+    width: 1px;
+    background: #CECECE;
+}
+
+.mem-btn {
+    text-align: center;
+    display: inline-block;
+    color:#043F98;
+    padding:20px;
+    transition: .3s;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+
+.mem-btn:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #CECECE;
+   
+}
+
+.mem-btn.active{
+    border-bottom: 1px solid #043f98;
+}
+    
+/* .mem-btn img{
+    height: 20px;
+    margin-bottom: 5px;
+} */
+
+
+/*  頁籤RWD (文修)開始 */
+.mem-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mem-tab-textdefult{
+    font-size: 18px;
+    font-weight: 300;
+    color: #043f98;
+}
+.mem-tab-textrwd{
+    display: none;
+}
+
+@media screen and (max-width:576px) { 
+.mem-tab-textdefult{
+    display: none;
+}
+.mem-tab-textrwd{
+    display: contents;
+    font-size: 18px;
+    font-weight: 300;
+}
+.btn-line{
+    display: none;
+}
+.member-buttons{
+    padding: 10px 0 0;
+}
+.mem-btn{
+    padding: 20px 0 15px 0 ;
+}
+}/*  頁籤RWD (文修)  結束*/
+
+article.member-list {
+    margin: 80px auto;
+
+}
+
+article.member-list>h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+article.member-list aside {
+    width: 30%;
+    margin-right: 50px;
+    min-width: 200px;
+}
+
+.member-list aside ul {
+    border: 1px solid #CECECE;
+    padding: 20px;
+    list-style: none;
+}
+
+.member-list ul li {
+    padding: 10px 0
+}
+.member-list-card{
+    transition: 0.3s;
+}
+.member-list-card:hover{
+    transform: translate(0, -10px);
+    box-shadow: 0 5px 15px #e5e5e5;
+}
+
+.member-list-card:hover .activity-name{
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.member-list aside ul li a{
+    color: #043f98;
+    text-decoration: none;
+}
+.member-list aside ul li a:hover{
+    color: #7AC943;
+}
+
+@media screen and (max-width:768px){
+    .member-list>.d-flex{
+        flex-direction: column;
+    }
+
+    article.member-list aside {
+    width: 100%;
+    margin-right: 0px;
+    }
+
+    aside ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .member-list-card-content .activity-name {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+    
+}
+
+
+

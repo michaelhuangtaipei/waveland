@@ -1,0 +1,117 @@
+    /* 首圖 */
+    .cart-bg02 {
+        height: 283px;
+        background-color: rgb(195, 195, 195);
+        /* background: url(../img/cart-bg.png) no-repeat; */
+        margin-top: 60px;
+    }
+
+
+
+         /* 購物車頁面內容整體框架 */
+  
+        .webcontainer-page02{
+            /* position: relative; */
+            max-width: 1024px;
+            margin: 0 auto;
+            height: 250vh;
+        }
+
+        /* 步驟顯示圖區塊 */
+        .cart-step02 {
+            margin: 71px auto 66px;
+            max-width: 829px;
+            height: 101px;
+            /* background-color: #AFAFAF; */
+        }
+
+        /*  ----------購物車商品明細區塊（開始）---------- */
+        .cart-list02 {
+            padding: 0;
+            margin: 0;
+        }
+
+         /* 商品明細title欄位 */
+        .cart-list-title02 {
+            height: 70px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #AFAFAF;
+        }
+
+         /* 商品明細內容 */
+        .cart-list-content02 {
+            padding: 10px 0;
+            border-bottom: 1px solid #AFAFAF;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /*  ----------購物車商品明細區塊（結束）---------- */
+
+
+
+
+        /*  ----------金額計算區塊（開始）---------- */
+        .cart-total{
+            display: flex;
+           flex-direction: column;
+           justify-content: flex-end;
+           text-align: end;
+        }
+
+        /* 折扣碼 */
+        .cart-discount-code{
+            width: 132px;
+            font-size: 1.125rem;
+            border: none;
+            border-bottom: 1px solid #043f98;
+        }
+
+        /* 折扣碼送出按鈕 */
+        .cart-discount-btn{
+            padding: 0 15px;
+            background-color: #043f98;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.875rem;
+        }
+
+        .cart-discount-p,.cart-twd-p{
+            color: #043f98;
+        }
+
+        .cart-discount-p{
+            display: inline-block;
+            font-size: 1.125rem;
+        }
+
+        .cart-info1{
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cart-info2-p{
+            margin: 15px 0;
+            font-size: 1.125rem;
+            color: #AFAFAF; 
+        }
+
+        .cart-twd-p{
+            font-size: 2rem;
+            margin: 15px 0; 
+            /* font-weight:bolder; */
+        }
+
+        .cart-TWD{
+            font-size: 1rem;
+        }
+
+        /*  ----------金額計算區塊（結束）---------- */
+       
+        
+
+        

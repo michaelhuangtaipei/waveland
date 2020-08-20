@@ -1,0 +1,59 @@
+        /* 首圖 */
+        .cart-bg01 {
+            height: 283px;
+            background-color: rgb(195, 195, 195);
+            /* background: url(../img/cart-bg.png) no-repeat; */
+            margin-top: 60px;
+        }
+
+         /* 購物車頁面內容整體框架 */
+        .webcontainer-page01{
+            /* position: relative; */
+            max-width: 1024px;
+            margin: 0 auto;
+            /* height: 150vh; */
+        }
+        
+
+        /* 步驟顯示圖區塊 */
+        .cart-step01 {
+            margin: 71px auto 66px;
+            max-width: 829px;
+            height: 101px;
+            /* background-color: #AFAFAF; */
+        }
+
+        /*  ----------購物車商品明細區塊（開始）---------- */
+        .cart-list01 {
+            padding: 0;
+            margin: 0;
+        }
+        
+        /* 商品明細title欄位 */
+        .cart-list-title01 {
+            height: 70px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #AFAFAF;
+        }
+
+        /* 商品明細內容 */
+        .cart-list-content01 {
+            padding: 108px 0;
+            /* background-color: rgb(200, 200, 200); */
+            border-bottom: 1px solid #AFAFAF;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* 文字：您的購物車沒有商品 */
+        .cart-p1 {
+            margin: 15px auto;
+            text-align: center;
+            font-size: 2.25rem;
+            color: #AFAFAF;
+        }
+
+        /*  ----------購物車商品明細區塊（結束）---------- */

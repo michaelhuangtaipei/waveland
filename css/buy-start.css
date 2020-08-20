@@ -1,0 +1,228 @@
+/* ----------購物車頁面內容整體框架---------- */
+.webcontainer-page03{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.cart-orderInfo{
+    width: 100%;
+    margin:  0 auto;
+    padding: 0 200px;
+}
+
+.cart-total{
+    border-top: 1px solid #AFAFAF;
+    display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   text-align: end;
+}
+
+.cart-info1{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-info2-p{
+    margin: 15px 0;
+    font-size: 1.125rem;
+    color: #AFAFAF; 
+}
+/* --------------------------------------------- */
+
+
+
+/* ----------表單樣式，參考葉的會員中心---------- */
+        ::placeholder {
+            color: #CECECE;
+            font-weight: 300;
+        }
+
+        input:focus {
+            background-color: #DFF1FB;
+        }
+
+        .member-form {
+            width: 800px;
+            margin: 80px auto;
+        }
+
+        .member-form section {
+            margin-bottom: 150px;
+        }
+
+        .member-form-group {
+            margin: 25px 0;
+        }
+
+        .member-form-group2{
+            display: inline-block;
+            width: 46%;
+            margin-left: 45px;
+        }
+
+        .member-form-group3{
+            width: 100%;
+            justify-content: space-between;
+            display: inline-block;
+            margin: 0 20px 0 0 ;
+        }
+
+        .member-form-group4{
+            width: 100%;
+            justify-content: space-between;
+            display: inline-block;
+        }
+
+        .member-form-group label {
+            font-size: 18px;
+        }
+
+        .member-form-group label.member-gender {
+            line-height: 50px;
+            margin-right: 25px;
+        }
+
+        .member-form-group input[type=text],
+        .member-form-group2 input[type=text],
+        input[type=date],
+        input[type=email],
+        input[type=tel],
+        input[type=address],
+        input[type=cardNumber],
+        .member-city,
+        .member-area,
+        .member-month,
+        .member-year,
+        .member-securityCode,
+        .member-taxIDnumber,
+        .member-purchaser
+         {
+            height: 50px;
+            width: 100%;
+            border: 1px solid #CECECE;
+            border-radius: 4px;
+            padding: 10px;
+            color: #CECECE;
+        }
+
+        .member-group{  
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .member-city{
+            width: 45%;
+            margin-right: 10px;
+        }
+
+        .member-area{
+            width: 55%;
+        }
+
+        .member-year,.member-month{
+            width: 30%;
+        }
+
+        .member-month{
+            margin-right: 10px;
+        }
+
+        .member-taxIDnumber{
+            margin-right: 22px;
+        }
+
+        .member-taxIDnumber, .member-purchaser{
+            width: 100%;
+        }
+
+        .input-200{
+            margin-top: 10px;
+        }
+
+        .member-form-group input.input-100 {
+            width: 100%;
+        }
+
+        .member-form-group input[type=radio] {
+            line-height: 50px;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .cart-payment-radio1{
+            width: 100%;
+            margin: 25px 0;
+            font-size: 1.375rem;
+            display: flex;
+            justify-content: center;
+            padding: 0 50px;
+        }
+
+        .cart-payment-radio2{
+            width: 100%;
+            margin: 25px 0;
+            font-size: 1.375rem;
+            padding: 0 auto;
+        }
+
+        .cart-payment1,.cart-taxID{
+           margin-bottom: 30px;
+           margin: 0 20px;
+        }
+
+        .cart-invoice{
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .form-check{
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .btns{
+            margin: 60px auto;
+            /* width: 110px; */
+            display:inline-block;
+        }
+
+/* --------------------------------------------- */
+
+
+         @media screen and (max-width:375px) {
+            .cart-orderInfo{
+                padding: 0;
+            }
+
+            .orderInfo-container{
+                padding: 0 33px;
+            }
+
+            .cart-slider-container{
+                padding: 0 15px;
+                flex-wrap: wrap;
+                flex-direction: column;
+                }
+
+            .cart-payment-radio1{
+                padding: 0 ;
+            }
+    
+            .cart-info1{
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .cart-return-btn2{
+                font-size: 1rem;
+            }
+
+            .cart-info2{
+                padding: 0 30px;
+                margin-bottom: 30px;
+            }
+
+        } 

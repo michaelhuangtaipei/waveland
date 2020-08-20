@@ -1,0 +1,1397 @@
+/* ----------------------商品頁共用元素----------------------------- */
+
+
+@media screen and (max-width:375px){
+.npd-rwdcontainer{
+    max-width: 345px;
+    margin: 0 auto;
+}
+} 
+
+@media screen and (max-width:824px){
+.npd-DownBOX{
+    max-width: 824px;
+    margin: 0 15px;
+}
+
+}
+/* -----強迫10px字----- */
+.trash{
+    width: 100%;
+    height: 50vh;
+    padding-top: 100px;
+}
+.npd-10px{
+    font-size: 10px;
+}
+.gpd-hide{
+    display: none;
+}
+
+/* -----  頁籤  ----- */
+
+.npd-tab01-black{
+    width: 100px;
+    height:auto ;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0px 0px 50px 0px;  
+}
+
+.npd-tab01-text{
+    color: #3F464D;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0 0;
+}/*--頁籤結束--*/
+
+@media screen and (max-width:576px){
+.npd-tab01-black{
+    padding: 0px 0px 30px 0px;  
+}
+}
+
+
+/* --------------------     小卡     ------------------ */
+/* --------揪團列表頁 card3 商品小卡--------*/
+.card3 {
+    max-width: 328px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    transition: all 0.4s ease-in-out;                       /*佳文加*/
+    }
+
+    
+.card3:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0 5px 15px #e5e5e5;
+    }
+
+
+.card3Top1 {
+    width: 100%;
+    height: 219px;
+    background: url("../img/public-product-1.jpg") center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    }
+.card3Top2 {
+    width: 100%;
+    height: 219px;
+    background: url("../img/1-fake-1.jpg") center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    }
+.card3Top3 {
+    width: 100%;
+    height: 219px;
+    background: url("../img/3-fake-1.jpg") center center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    }
+
+
+/* .ndp-card3more-1{
+    background: url("../img/public-product-1.jpg") center center no-repeat;
+}
+#ndp-card3more-2{
+    background: url("../img/1-fake-1.jpg") center center no-repeat;
+}
+.ndp-card3more-3{
+    background: url("../img/3-fake-1.jpg") center center no-repeat;
+} */
+
+.card3Down {
+    width: 100%;
+    padding: 20px;
+    }
+
+.card3DownBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.card3title {
+    font-size: 18px;
+    font-weight: 100;
+    width: 100%;
+    cursor: pointer;
+    }
+
+.card3title:hover{
+    color: #7AC943;
+}
+.card3IntroText p {
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: left;
+    color: #707070;
+    font-weight: 100;
+    }
+
+.card3IntroIcon {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    max-width: 300px;
+    }
+
+
+.card3Icon {
+    display: flex;
+    color: #707070;
+    padding-top: 6px;
+    padding-right: 30px;
+    }
+
+.card3Icon img {
+    margin-right: 8px;
+    }
+
+.card3Price {
+    display: flex;
+    align-items: center;
+    }
+
+.card3Price p {
+    color: #043F98;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: end;
+    }
+
+.card3Price .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+    }
+/* ---- 愛心開始 ------*/
+.priceNheart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cls-1 {
+    fill: none;
+    stroke: #afafaf;
+    stroke-miterlimit: 10;
+}
+.Heart:hover .cls-1 {
+    fill: indianred;
+    stroke:none;
+}
+
+/* --------btn1.2  藍白按鈕共用--------------  */
+.btns{
+    padding:0 25px;
+    height: 40px;
+    line-height: 2.5rem;
+    border-radius:30px;
+    display:inline-block;
+    font-size: 1rem;
+    font-family:'Noto Sans TC', sans-serif,微軟正黑體,Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: 1px solid #043f98;
+        }
+
+/*一般商品頁結帳*/
+    .btns2-npd{
+        width: 30%;     /*手機板RWD要改成25%*/
+        text-align: center;
+        }
+@media screen and (max-width:478px){
+    .btns2-npd{
+        width: 40%;     /*手機板RWD要改成25%*/
+        text-align: center;
+        }
+}
+/* --------btn1.2  藍白按鈕end--------------  */
+
+
+/* ---btn1 藍色按鈕----  */
+.btn-blue{
+    background:#043f98;
+    color: white;
+        }
+/* --------btn1 藍色按鈕css結束--------  */
+
+
+
+/* --------btn2 白色按鈕--------------  */
+.btn-white {
+    background:white;
+    color: #043f98;
+        }
+/* --------btn2 白色按鈕css結束--------  */
+
+
+
+
+
+
+/* --------btn3 藍色按鈕--------------  */
+.btn-blue{
+    background:#043f98;
+    color: white;
+        }
+/* --------btn3 藍色按鈕css結束--------  */
+
+
+
+/* --------btn4 白色按鈕--------------  */
+.btn-white {
+    background:white;
+    color: #043f98;
+        }
+/* --------btn4 白色按鈕css結束--------  */
+
+/* --=============================  按鈕  CSS end==============================-- */
+
+
+
+/* --------------------  商品頁共用元素  end  ----------------------- */
+
+
+
+
+
+/* ----------------------area0 次選單 css 開始----------------------*/
+
+.npd-sec-nav-area{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background-color: white;
+    /* position:fixed; */
+    z-index: 2;
+    margin: 60px auto 0;
+
+}
+.npd-area0 {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+
+    }
+
+/* ----------次選單選項----------*/
+.npd-sec-nav{
+    flex-grow: 1;
+    /* padding-top: 5px;
+    margin-left: 30px; */
+}
+.npd-sec-nav ul{
+    display: flex;
+}
+.npd-sec-nav ul li{
+    display: block;
+    margin: 0 30px 0 0;
+    padding: 15px 0 0 0;
+}
+
+.npd-sec-nav ul li a{
+    text-decoration: none;
+    color:#3F464D;
+    font-size: 22px;
+    font-weight: normal;
+}
+.npd-sec-nav ul li a:active{
+    color:#043f98;
+}
+.npd-sec-nav ul li a:hover{
+    color:#043f98
+}
+
+/* ----------次選單CTA----------*/
+.npd-sec-nav-cta{
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.npd-sec-nav-price{
+    width: 120px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 10px;
+}
+.npd-sec-nav-price h4,.npd-sec-nav-price p {
+    color: #7ac943;
+    font-weight: normal;
+}
+@media screen and (max-width:1024px){
+.npd-sec-nav-area{
+    width: 100%;
+}
+.npd-sec-nav ul li{
+    margin: 0 15px 0 0;
+}
+.npd-sec-nav ul li a{
+    font-size: 18px;
+}
+.npd-area0 {
+    width: 100%;
+    display: flex;
+    margin: 0 15px;
+
+    }
+
+}
+
+@media screen and (max-width:750px){
+.npd-sec-nav-area{
+    height: 120px;
+    width: 100%;
+}
+.npd-area0{
+    display: flex;
+    flex-direction: column;
+}
+.npd-sec-nav ul li{
+    margin: 0 15px 0 0;
+}
+.npd-sec-nav ul li a{
+    font-size: 1.125rem;
+}
+.npd-sec-nav-cta{
+    max-width: 345px;
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+}
+}
+@media screen and (max-width:375px){
+.npd-sec-nav-area{
+    /* height: 120px; */
+    max-width: 100%;
+    }
+
+}
+@media screen and (max-width:365px){
+.npd-sec-nav ul li a{
+    font-size: 1rem;
+}
+}
+
+
+
+
+/* ------  錨點按鈕  ----- */
+.npd-fixedbtn{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    transition: 0.5s;
+    z-index: 98;
+  }
+.npd-fixedbtn2{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    transition: 0.5s;
+    z-index: 98;
+    cursor: pointer;
+  }
+/* ----------------------area2 商品名稱 css 開始----------------------*/
+.npd-area2{
+    /* max-width: 1024px; */
+    width: 100%;
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: -30px;       /* 與area1 kv之間的留白 */
+
+}
+.npd-area2-title{
+    display: flex;
+    width: 100%;
+    /* max-height: ; */
+}
+
+.npd-area2-info{
+    width: 100%;
+    margin-top: 4px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+/* ----------icon區---------- */
+.npd-area2-icon{
+    max-width: 260px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.npd-area2-icon-place img,.npd-area2-icon-time img{
+    width: 20px;
+}
+.npd-area2-icon-place h5,.npd-area2-icon-time h5{
+    font-weight: normal;
+    color: #043f98;
+    margin-left: 5px;
+}
+
+.npd-area2-icon-place,.npd-area2-icon-time{
+    display: flex;
+    margin-right: 15px;
+}
+
+/* ----詳情頁特製---- */
+.gdp-area2-icon-date{
+    width: 340px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+
+}
+.gdp-area2-icon-date h5{
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    font-weight: normal;
+    color: #043f98;
+}
+
+/* ----------價格區---------- */
+.npd-area2-price{
+    width: 147px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.gd-area2-price{
+    max-width: 250px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.npd-area2-price-space,.gd-area2-price-space{
+    padding-right: 15px;
+}
+.npd-area2-price h6,.npd-area2-price h2,.gd-area2-price h6,.gd-area2-price h2 {
+    color: #043f98;
+    font-weight: normal;
+}
+
+.npd-area2-price h2,.gd-area2-price h2{
+    font-weight: bold;
+}
+.npd-area2-price p,.gd-area2-price p {
+    color: #043f98;
+    font-weight: normal;
+}
+
+
+@media screen and (max-width:600px){
+.npd-area2-downRWD{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.gd-area2-price{
+    display: none;
+}
+.npd-area2-price{
+    display: none;
+    
+}
+
+.npd-area2-price p{          /*待修改*/
+    display: inline-flex;
+    align-self: baseline;
+
+}
+.npd-area2-icon{
+    width: 300px;
+}
+}
+@media screen and (max-width:960px){
+.npd-area2{
+    max-height: 200px;
+    margin-bottom: 60px;    /*標題和基本簡介的留白*/    
+}
+}
+@media screen and (max-width:576px){
+.npd-area2-title{
+    font-size: 28px;
+}
+}
+@media screen and (max-width:375px){
+    .npd-area2{
+        width: 375px;
+    }
+
+
+}
+/* ----------------------area2 商品名稱 css 結束----------------------*/
+
+
+
+
+
+/* ======大區塊設定======= */
+.area2 .npd-area2-info{
+    margin-bottom: 40px;
+}
+.npd-biggestBOX{            /*外卡區*/
+    margin-top: 20px;       /*與title之間的距離*/
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    max-width: 1024px;
+    height: auto;
+}
+.npd-biggestBOX-insetBlank{
+    padding-top: 150px;    /*大區塊上留白*/
+    padding-bottom: 60px;    /*大區塊下留白*/
+    max-width: 824px;         /*內卡區*/
+    height: auto;
+    margin: 0 auto;
+}
+@media screen and (max-width:1024px){
+.npd-biggestBOX{
+    box-shadow: none;
+    margin: 0 15px;
+}
+.gd-cta1{
+    padding-bottom: 0px !important;    /*詳情頁大區塊下留白*/
+}
+.npd-biggestBOX-insetBlank{
+    padding-bottom: 0px;    /*大區塊下留白*/
+}
+}
+@media screen and (max-width:960px){
+.npd-biggestBOX-insetBlank{
+    padding-top: 0;    /*大區塊上留白*/
+    padding-bottom: 0px;    /*大區塊下留白*/
+    }
+    }
+@media screen and (max-width:576px){
+.npd-biggestBOX{
+    margin: 0px 15px 0 15px;
+}
+
+}
+
+
+
+/* ====== 揪團頭貼 ======= */
+.gpd-area6-attent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.gpd-area6-attent p{
+    width: 40px;
+    margin-right: 20px;
+}
+.gpd-area6-attentimgbox{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.gpd-area6-attentimgbox figure{
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+
+.gpd-area6-attentimgbox figure img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.gpd-area6-attentimgbox figure img:hover{
+    transform: scale(1.1);
+
+}
+
+@media screen and (max-width:576px){
+
+.gpd-area6-attentimgbox,.gpd-area6-attent{
+    display: flex;
+    flex-wrap:wrap ;
+}
+}
+
+/* ----------------------area3 基本簡介 css 開始----------------------*/
+.npd-area3{
+    height: auto;
+    width: 100%;
+}
+.npd-area13{
+    padding: 0;
+}
+.npd-area3-text{
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.npd-area3-left p{
+    text-align: center;
+    font-weight: normal;
+    color: #043f98;
+    /* display: flex;
+    align-items: center; */
+}
+.npd-area3-right h6{
+    font-size: 1rem;
+    color: #3F464D;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+@media screen and (max-width:1024px){
+.npd-area3-left p{
+    text-align: left;
+}
+}
+@media screen and (max-width:576px){
+.npd-area3-left p{
+    font-size: 18px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+}
+/* ----------------------area3 基本簡介 css 結束----------------------*/
+
+
+
+
+
+/* ----------------------  area4 行程安排照片區 css 開始 ----------------------*/
+.npd-area4{
+    padding: 80px 0 40px;    /*和area3之間的留白*/
+
+}
+.npd-area4-album{
+    display: flex;
+    justify-content: space-between;
+}
+.npd-area4-album div{
+    width: 18%;
+}
+
+.npd-area4-album img{
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+}
+
+/* .npd-area4-album1{
+    background: url("../img/1-album-1.jpg") no-repeat center center;
+    object-fit: cover;
+}
+
+.npd-area4-album2{
+    background: url("../img/1-album-2.jpg") no-repeat center center;
+    object-fit: cover;
+
+}
+.npd-area4-album3{
+    background: url("../img/1-album-3.jpg") no-repeat center center;
+    object-fit: cover;
+
+}
+.npd-area4-album4{
+    background: url("../img/1-album-4.jpg") no-repeat center center;
+    object-fit: cover;
+} */
+
+.npd-area4-album .npd-area4-album-more{
+    width: 150px;
+    /* background: url("../img/1-album-5.jpg") no-repeat center center; */
+    object-fit: fill;
+    position: relative;
+    /* display: flex;
+    align-items: center; */
+
+}
+
+.npd-area4-album-more .npd-area4-album-more-mask{
+    width: 150px;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.70);
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.npd-area4-album-more-mask h3{
+    display: inline-flex;
+    color: white;
+}
+@media screen and (max-width:850px){
+.npd-area4-album4{
+    display: none;
+}
+}
+@media screen and (max-width:684px){
+.npd-area4-album3{
+        display: none;
+    }
+    }
+@media screen and (max-width:576px){
+.npd-area4{
+    padding: 50px 0 30px;    /*和area3之間的留白*/
+    }
+
+}
+@media screen and (max-width:375px){
+    .npd-area4-album2{
+        display: none;
+    }
+    }
+/* ----------------------  area4 行程安排照片區 css 結束 ----------------------*/
+
+
+
+
+
+/* ----------------------  area5 行程安排時間軸 css 開始 ----------------------*/
+.npd-area5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 824px;
+    height: auto;
+}
+.npd-area5-box{
+    display: flex;
+    max-width: 824px;
+}
+/* ----- 時間軸 ----- */
+.npd-area5-box-timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 14px;
+}
+.npd-area5-box-timeline-circle{
+    width: 20px;
+    height: 20px;
+    background-color:  #dff1fb;
+    border-radius: 50%;
+}
+.npd-area5-box-timeline-line{
+    width: 5px;
+    height: 50px;
+    background-color: #dff1fb;
+    flex-grow: 1;
+}
+
+/* -----進行時段----- */
+.npd-area5-box-right{
+    display: flex;
+    max-width: 790px;
+
+}
+.npd-area5-box-schedule{
+    display: flex;
+    width: 220px;
+}
+.npd-area5-box-schedule h5{
+    color: #043f98;
+    font-weight: normal;
+}
+/* -----文字說明----- */
+.npd-area5-box-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+    /* flex-grow: 1;   */
+}
+.npd-area5-box-textTitle h5{
+    color: #043f98;
+    font-weight: normal;
+}
+.npd-area5-box-textWords p{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #3F464D;
+    line-height: 1.5rem;
+}
+.npd-area5-box-blank{
+    max-width: 100%;
+    background-color: white;
+
+}
+@media screen and (max-width:875px){
+.npd-area5-box-right{
+    display: flex;
+    flex-direction: column;
+    max-width: 875px;
+}
+.npd-area5-box-text{
+    max-width: 875px;
+}
+.npd-area5-box-textTitle h5{
+    padding-top: 15px;
+}
+
+}
+/* ----------------------  area5 行程安排時間軸 css 結束 ----------------------*/
+
+
+
+
+
+/* ----------------------  area6 集合資訊 css 結束 ----------------------*/
+.npd-area6{
+    height: auto;
+    width: 100%;
+    padding: 100px 0 0px;    /*和area5之間的留白*/
+}
+.npd-area6-box{
+    height: auto;
+    width: 100%;
+}
+.npd-area6-boxText{
+    padding-bottom: 40px;
+}
+.npd-area6-boxText2{
+    padding: 10px;
+}
+
+.npd-area6-boxText h5,.npd-area6-boxText2 h5{
+    color: #043f98;
+    font-weight: normal;
+    line-height: 1.5rem;
+
+}
+.npd-area6-boxText p,.npd-area6-boxText2 p{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #3F464D;
+    line-height: 1.5rem;
+}
+
+
+
+@media screen and (max-width:576px){
+.npd-area6{
+    padding: 50px 0 0px;    /*和area5之間的留白*/
+}
+.npd-area6-boxText{
+    padding-bottom: 20px;
+}
+.npd-area6-box h5{
+    font-size: 1rem;
+}
+.npd-area6-box p{
+    font-size: 0.875rem;
+    line-height: 1.43rem;
+   
+}
+}
+
+/* ----------------------  area6 集合資訊 css 結束 ----------------------*/
+
+
+
+
+
+/* ----------------------  area7 購買須知 css開始 ----------------------*/
+.npd-area6-boxText  li{
+    font-size: 1rem;
+    font-weight: 100;
+    color: #3F464D;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width:576px){
+.npd-area6-boxText li{
+    font-size: 0.875rem;
+    line-height: 1.43rem;
+}
+}
+
+/* ----------------------  area7 購買須知 css結束 ----------------------*/
+
+
+
+
+
+/* ======大區塊設定======= */
+.npd-DownBOX{
+    padding-bottom: 60px;    /*大區塊上留白*/
+    max-width: 824px;         /*內卡區*/
+    height: auto;
+    margin: 0 auto;
+}
+/* ----------------------area8 活動訂購/加購商品 css開始 ----------------------*/
+.npd-area8{
+    height: auto;
+    width: 100%;
+    padding: 120px 0 0;    /*和area5之間的留白*/
+}
+/* -----揪團頁特製-------- */
+.gd-area8-pt{              /*ＣＴＡ前的留白*/
+    padding: 95px 0 0;     
+}
+.gd-area8-pb{
+    padding-bottom:0px ;
+}
+@media screen and (max-width:1024px){
+.gd-area8-pt{              /*ＣＴＡ前的留白*/
+    padding: 95px 0 0;     
+}
+.gd-area8-m{
+    margin: 0 !important;
+}
+}
+
+
+
+.npd-area8-tab1{
+    font-weight: 500;
+    color: #043f98;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.npd-area8-tab2{
+    font-weight: 500;
+    color: #043f98;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+/*-----日期時段-----*/
+::placeholder {
+    color: #CECECE;
+    font-weight: 300;
+        }
+
+.npd-form-group {
+    margin: 25px 0;
+    align-items: center;
+        }
+
+.npd-form-group label {
+    font-size: 18px;
+        }
+
+.npd-form-group input:focus,.npd-form-group select:focus{
+    outline: 2px solid #043f98;
+    border-radius: 4px;
+        }
+
+.npd-form-group input[type=text],input[type=date],select[type=text] {
+    height: 50px;
+    width:100%;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+    padding: 10px;
+    color: #262626;
+        }
+
+.npd-form-group input.input-100 {
+    width: 100%;
+        }
+
+/*-----人數選擇-----*/
+.npd-form-option{
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+
+}
+.npd-form-option h5{
+    color:#262626;
+
+}
+
+.npd-form-option p{
+    color:#AFAFAF;
+    font-size: 18px;
+    padding-right: 50px;
+}
+.npd-form-price{
+    margin-left: 20px;
+}
+/*-----計數器-----*/
+.npd-form-counter{                                       /*計數器加減的大外框*/
+    width: 99%;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #AFAFAF;
+    margin: 0 auto;
+
+}
+.npd-form-counter-reduce,.npd-form-counter-plus{        /*計數器加減的外框框框*/
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 3rem;
+    cursor: pointer;
+}
+
+.npd-form-counter-btn.active{
+    background-color: #7d9ecf;
+
+}
+.npd-form-counter-btn{
+    background-color: #043f98;
+
+}
+.npd-form-counter-quantity{
+    width: 33%;
+    height: 50px;
+    color: #262626;
+
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 3rem;
+}
+/*-----總金額-----*/
+.npd-area8-total{
+    max-width: 100%;
+    margin-top: 40px;
+    border-top: 1px solid #707070;
+
+}
+
+.npd-form-subpricewords,.npd-form-sub-group{
+    max-width: 100%;
+    text-align: right ;
+    font-size: 18px;
+}
+.npd-form-subpricetext{
+    color:#043f98;
+    font-size: 16px;
+
+}
+.npd-form-subprice{
+    color:#043f98;
+    font-size: 32px;
+    margin-left: 5px;
+}
+@media screen and (max-width:767px){
+.npd-rwd-area8-tab-p-b{
+    padding-bottom: 20px;
+}
+.npd-form-option h5{
+    padding-bottom: 10px;
+}
+.npd-form-option p{
+    padding-right: 0;
+    margin: 0;
+}
+}
+
+
+
+@media screen and (max-width:576px){
+.npd-area8{
+    padding: 80px 0 0px;    /*和area5之間的留白*/
+}
+.npd-area8-tab1{
+    font-size: 24px;
+    font-weight: normal;
+}
+.npd-area8-rwd{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+}
+
+/* ----------------------area8 活動訂購/加購商品 css結束 ----------------------*/
+
+
+
+
+
+/* ----------------------     area9   留言區   css開始  ----------------------*/
+/*個人頁lightbox*/
+.npd-area9{
+    max-width: 824px;
+    margin: 0 auto;
+}
+.toggle-area{
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.toggle-area.active{
+    height: auto;
+}
+
+.comment-card-group h4{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.member-float-card.active{
+    width: 100%;
+    min-height: 200vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/*評論card*/
+.comment-card-final{
+    border-bottom: 1px solid #CECECE;
+}
+.comment-card{
+    border-top: 1px solid #CECECE;
+    padding: 30px;
+    display: flex;
+}
+
+.comment-card figure{
+    text-align: center;
+    margin-right: 50px;
+    margin-bottom: 0;
+}
+
+.comment-card p{
+    margin-top: 10px;
+    font-weight: 300;                     /*佳文改*/
+}
+
+.comment-card figure img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.comment-card figure p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.comment-content img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.comment-content h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+} 
+
+.comment-content .comment-text{
+    overflow:hidden;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.comment-content .comment-text.active{
+    -webkit-line-clamp: 10;
+}
+
+.comment-content .comment-date{                
+    color: #AFAFAF;
+    font-weight: 200;                      /*佳文改*/
+ 
+}
+.seeMore{                                  /*佳文改*/
+    color: #043F98;       
+}
+.seeMore:hover{                            /*佳文改*/
+    color: #7AC943;
+}
+/*------------頁碼換頁-----------*/
+.btn-toolbar {
+    margin-top: 30px;
+}
+.btn-group{
+    /* border: 1px solid #AFAFAF; */
+    border-radius: 5px;
+}
+.btn-group .btn{
+    background-color: white;
+    border: 1px solid #AFAFAF;
+    color: #043f98;
+    margin: 0 3px;
+}
+.btn-group .btn:visited,.btn-group .btn:active{
+    background-color: #043f98;
+    border: 1px solid #AFAFAF;
+    color: white;
+}
+
+.fa-chevron-left,.fa-chevron-right{
+    color:#043f98;
+    width: 30px;
+}
+.fa-chevron-left:visited,.fa-chevron-right:visited{
+    background-color: #043f98;
+    color: white;
+}
+.fa-chevron-left:active,.fa-chevron-right:active{
+    background-color: #043f98;
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    .comment-card{
+        flex-direction: column;
+    }
+    .comment-card figure{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
+}
+/* ----------------------     area9   留言區   css結束  ----------------------*/
+
+
+
+
+
+/* ----------------------   area10 更多商品推薦 css開始  ----------------------*/
+.npd-area10 {
+    height: auto;
+    width: 100%;
+    padding-top: 120px;
+}
+.npd-area10 h3{
+    padding-bottom: 30px;
+}
+
+/* ----------------------   area10 更多商品推薦 css開始  ----------------------*/
+
+
+
+
+
+/* ----------------------   個人資訊小卡 css開始  ----------------------*/
+.member-card {
+    background-color: #043F98;
+    color: white;
+    width: 350px;
+    padding: 10px;
+    position: absolute;
+    top:50px;
+    left: 0;
+
+}
+
+.member-card-area {
+    background-color: #043F98;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+
+
+/*------------個人照片-----------*/
+
+.member-photo img {                          /*照片大小*/
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #CECECE;
+    overflow: hidden;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.straight-line {
+    width: 2px;
+    height: 100px;
+    background: #CECECE;
+    margin: 0 10px;
+}
+
+
+
+/*----------個人頁內容------------*/
+.member-card-info{
+    flex-grow: 1;
+    margin-top: -10px;
+}
+.mem-card-infoBOX{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.member-card-info h4{
+    font-weight: 500;
+    font-size: 1.125rem;
+    /* margin-bottom: 20px; */   /*佳文改*/
+}
+
+.mem-card-medal{
+    /* max-width: 90px; */
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.member-card-info p{
+    margin-top: 5px;
+    font-size: 0.875rem;
+    font-weight: 200;
+    width: 260px;
+}
+
+.member-card-info img {             /*-- 徽章 --*/
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 5px 0 0;
+}
+
+/* ----------------------   個人資訊小卡 css 結束  ----------------------*/

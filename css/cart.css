@@ -1,0 +1,144 @@
+        /* ----------購物車頁面內容整體框架---------- */
+        .webcontainer-page02 {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .cart-p1 {
+            margin: 15px auto;
+            text-align: center;
+            font-size: 2.25rem;
+            color: #AFAFAF;
+        }
+
+        /* --------------------------------------------- */
+
+
+        /* ----------商品明細區塊---------- */
+        .cart-list02 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .cart-list-title02 {
+            height: 70px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #AFAFAF;
+        }
+
+        .cart-list-content02 {
+            /* padding: 10px 0; */
+            border-bottom: 1px solid #AFAFAF;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* --------------------------------------------- */
+
+
+        /* ----------金額計算區塊---------- */
+        .cart-total {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: end;
+        }
+
+        /* 折扣碼 */
+        .cart-discount-code {
+            width: 132px;
+            font-size: 1.125rem;
+            border: none;
+            border-bottom: 1px solid #043f98;
+        }
+
+        .cart-discount-p {
+            color: #043f98;
+        }
+
+        .cart-discount-p {
+            display: inline-block;
+            font-size: 1.125rem;
+        }
+
+        .cart-info1 {
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cart-info2-p,
+        .cart-subtotal {
+            margin: 15px 0;
+            font-size: 1.125rem;
+            color: #AFAFAF;
+        }
+
+        .cart-TWD {
+            font-size: 1rem;
+        }
+
+        .btn-white {
+            display: none;
+        }
+
+        .cart-btn {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        /* --------------------------------------------- */
+        @media screen and (max-width:375px) {
+            .cart-list02 {
+                display: none;
+            }
+
+            .cart-empty {
+                margin: 83px 0 91px;
+            }
+
+            .cart-p2 {
+                display: none;
+            }
+
+            .mobile-h3 {
+                display: block;
+            }
+
+            .mobile-p {
+                display: block;
+                padding-top: -10px;
+                margin-top: -20px;
+            }
+
+            .cart-checkbox {
+                display: none;
+            }
+
+            .cart-return-btn {
+                display: none;
+            }
+
+            .cart-info1 {
+                justify-content: flex-end;
+                padding: 0 30px;
+            }
+
+            .cart-info2 {
+                padding: 0 30px;
+            }
+
+            .btn-white {
+                display: block;
+            }
+
+            .cart-btn {
+                justify-content: space-around;
+                margin: 60px auto;
+            }
+
+        }

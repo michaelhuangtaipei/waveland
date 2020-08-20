@@ -1,0 +1,398 @@
+/* --------購物清單頁 card7 商品長卡(開始)：用於購物車購買明細-------*/
+.card7{
+    display: flex;
+    max-width: 957px;
+    max-height: 230px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: white;
+}
+
+.card7Left{
+    width: 474px;
+    height: 230px;
+    background-image: url("../img/public-product-8.jpg");
+}
+.card7Right{
+    border-bottom: 7px solid #043F98;
+    width: 550px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    
+}
+.card7CG{
+    width: 500px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+.card7heart{
+    margin-right: 20px;
+}
+
+.card7heart-svg,.card7heart-img{
+    height: 25px;
+   
+}
+
+.card7-cls-1 {
+    fill: none;
+    stroke: #043f98;
+    stroke-miterlimit: 10;
+        }
+ 
+.card7heart:hover .card7-cls-1{
+    fill: indianred;
+    stroke:none;
+}
+.card7RightBox{
+    max-width: 500px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    
+}
+.card7name p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.11;
+    color: #262626;
+    margin-left: 38px;
+
+}
+
+.card7IntroIconALL{
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+    margin-left: 40px;
+}
+.card7Icon{
+    display: flex;
+    color:#262626;
+    margin-right: 14px;
+    line-height: 1.67;
+}
+.card7IntroIconRow1{
+    display: flex;
+}
+.card7IntroIconRow1 p,.card7IntroIconRow2 p,.card7People p{
+    font-size: 12px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.card7Place{
+    margin-right: 25px;
+}
+
+.card7Icon img{
+    margin-right: 8px;
+}
+
+.card7IntroIconRow2{
+    display: flex;
+    font-size: 12px;
+    line-height: 1.67;
+    font-weight: 100;
+}
+
+.card7Price{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card7Price p{
+    color: #043F98;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.card7Price .price{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+/* -------RWD--------*/
+
+@media screen and (max-width:375px){
+.card7{
+    width: 375px;
+    height: 114px;
+    display: flex;
+}
+.card7Left{
+    width: 120px;
+    height: 120px;
+    background-position:center;
+    background-size: cover;
+}
+.card7Right{
+    width: 255px;
+    height: 120px;
+    position: relative;
+}
+.card7RightBox{
+    max-width: 255px;
+    max-height: 120px;
+}
+.card7CG{
+    width: 255px;
+    height: 16px;
+    justify-content: flex-end;
+    align-items: center;
+    order: 10;
+    z-index: 5;
+    position: absolute;
+    bottom: 9%;
+    right: 9%;
+}
+.card7heart svg{
+    height: 17px;
+    margin-bottom: 3px;
+}
+.card7heart svg,img{
+    height: 17px;
+}
+
+.card7name p{
+    font-size: 14px;
+    margin: 12px 0 0 15px;
+}
+.card7IntroIconALL{
+    flex-direction: row;
+    margin-top: 7px;
+    margin-left: 17px;
+    font-size: 12px;
+}
+.card7Date img{
+    margin-top: 3px;
+}
+.card7Place,.card7Time{
+    display: none;
+}
+.card7Price{
+    width: 255px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.card7Price p{
+    color: #043F98;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 6px;
+}
+.card7Price .price{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+}
+
+/* --------購物清單頁 card7 商品長卡(結束)--------*/
+
+
+
+
+
+/* --------購物車清單 card6 商品小卡(開始)：用於推薦區塊：多數旅客還體驗了以下活動--------*/
+
+.card6{
+    width: 328px;
+    max-height: 420px;
+    /* 袁加入margin: 0 9px; */
+    margin: 0 9px;
+    background-color: white;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    box-shadow: 0px 1px 3px #AFAFAF;
+
+}
+
+.card6Top{
+    width: 328px;
+    height: 219px;
+    background-image: url("/img/public-product-3.jpg");
+    object-position: center center;
+    object-fit: cover;
+}
+.card6Down{
+    max-width: 328px;
+    max-height: 201px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding: 15px 25px;
+}
+
+.card6DownBox{
+    max-width: 267px;
+    max-height: 201px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 23px;    
+}
+.card6title p{
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.11;
+    color: #262626;
+}
+.card6IntroIcon{
+    margin-top: 20px;
+    display: flex;
+    flex-direction:column;
+    font-size: 12px;
+}
+.card6IntroIcon p{
+    margin-left: 8px;
+}
+.card6Icon{
+    display: flex;
+    color:#262626;
+    margin-top: 5px;
+}
+.card6PC{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.card6Price{
+    display: flex;
+    align-items: center;
+}
+.card6Price p{
+    color: #043F98;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+}
+.card6Price .price{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.card6heart{
+    width: 27.1px;
+}
+.card6-cls-1 {
+    fill: none;
+    stroke: #043f98;
+    stroke-miterlimit: 10;
+        }
+ 
+.card6heart:hover .card6-cls-1{
+    fill: indianred;
+    stroke:none;
+}
+.card6more{
+    display: none;
+}
+
+/* -------RWD--------*/
+
+@media screen and (max-width:375px){
+.card6{
+    display: flex;
+    padding: 15px 0;
+    width: 309px;
+    height: 104px;
+    flex-direction: column;
+
+}
+.card6Top{
+    width: 80px;
+    height: 74px;
+    background-position:center;
+    background-size: cover;
+  
+}
+.card6Down{
+    width: 215px;
+    height:104px;
+    padding: 0 0 15px 15px;
+}
+
+.card6DownBox{
+    width: 215px;
+    height:104px;
+    margin-top: 0;
+}
+.card6title p{
+    /* margin-top: 5px; */
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 1.67;
+    color: #262626;
+}
+
+.card6IntroIcon{
+    margin-top: 8.2px;
+    display: flex;
+    flex-direction:row;
+    font-size: 12px;
+}
+.card6Icon{
+    margin-right: 12px;
+}
+.card6IntroIcon p{
+    margin-left: 4px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 100;
+}
+.card6Signed{
+    display: none;
+}
+.card6PC{
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.7px;
+}
+.card6heart{
+    display: none;
+}
+.card6more{
+    display: block;
+    width: 80px;
+    height: 20px;
+    border-radius: 20px;
+    border: solid 1px #043f98;
+    text-align: center;
+    margin-right: 2px;
+}
+.card6more p{
+    font-size: 14px;
+    line-height: 17.5px;
+    font-weight: normal;
+    color: #043f98;
+}
+}
+/* --------購物車清單 card6 商品小卡(結束)--------*/

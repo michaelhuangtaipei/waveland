@@ -1,0 +1,201 @@
+/* 購物車頁面共用元件 */
+
+
+        /* ----------桌機版字體---------- */
+        .cart-h3 {
+            text-align: center;
+            color: #043F98;
+            margin: 82px 0 60px;
+        }
+
+        .cart-twd-p {
+            font-size: 2rem;
+            margin: 15px 0;
+            color: #043f98;
+        }
+        /* --------------------------------------------- */
+
+
+        /* ----------手機版字體---------- */
+        .mobile-h3 {
+            text-align: center;
+            background-color: #DFF1FB;
+            color: #2186C4;
+            padding: 15px 0;
+            display: none;
+        }
+
+        .mobile-p {
+            color: #043F98;
+            display: none;
+            padding: 0 15px;
+        }
+
+        @media screen and (max-width:375px) {
+            .cart-p2 {
+                display: none;
+            }
+
+            .mobile-h3 {
+                display: block;
+            }
+
+            .mobile-p {
+                display: block;
+                padding-top: -10px;
+                margin-top: -20px;
+            }
+
+            .cart-h3 {
+                display: none;
+            }
+
+        }
+        /* --------------------------------------------- */
+
+
+        /* ----------頁面主視覺---------- */
+        .member-kv {
+            background: url("../img/3-kv.jpg") center top no-repeat;
+            background-size: cover;
+            height: 450px;
+            position: relative;
+        }
+
+        .member-kv .kv-wave {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 150px;
+        }
+
+        @media screen and (max-width:768px) {
+            .member-kv {
+                height: 350px;
+            }
+
+            .member-kv .kv-wave {
+                height: 100px;
+                bottom: -20px;
+            }
+        }
+        
+        /* --------------------------------------------- */
+
+
+        /* ----------購物車背景＋步驟顯示---------- */
+        .cart-bg {
+            height: 283px;
+            background-color: rgb(195, 195, 195);
+            margin-top: 60px;
+        }
+
+        .cart-step {
+            margin: 71px auto 66px;
+            max-width: 829px;
+            height: 101px;
+        }
+
+        .cart-step-img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        @media screen and (max-width:375px) {
+            .cart-bg {
+                height: 120px;
+                background-color: rgb(195, 195, 195);
+                margin-top: 60px;
+            }
+
+            .cart-step {
+                padding: 0 30px;
+                margin: 30px auto;
+            }
+        }
+        /* --------------------------------------------- */
+
+
+        /* ----------checkbox---------- */
+        .cart-checkbox {
+            margin: 0 30px 0 0;
+        }
+
+        input[type=checkbox]:checked::after {
+            background: #043f98;
+        }
+
+        .cart-a {
+            text-align: center;
+        }
+
+        .checked-all,
+        .cart-a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .cart-a:hover,
+        .checked-all:hover {
+            text-decoration: none;
+        }
+
+        /* 連結(全選｜刪除已選項目) */
+        .checked-all {
+            color: #AFAFAF;
+            margin: 0 15px 0 0;
+        }
+        /* --------------------------------------------- */
+
+        
+        /* ----------返回上一頁按鈕的　icon+樣式---------- */
+        .icon-arrow-left-gray {
+            height: 25px;
+            margin: 0 25px 0 0;
+        }
+
+        .cart-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* --------------------------------------------- */
+
+
+        /* cart-slider：多數多數旅客還體驗了以下活動區塊 */
+        .cart-slider {
+            min-width: 100%;
+            box-sizing: border-box;
+            height: 600px;
+            margin: 73px 0 0 0;
+        }
+
+        .cart-p2 {
+            margin: 0 0 63px 0;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #043F98;
+        }
+
+        .cart-slider-container {
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon-arrow-right,
+        .icon-arrow-left {
+            align-items: center;
+        }
+
+        .icon-arrow-right {
+            margin-left: 54px;
+        }
+
+        .icon-arrow-left {
+            margin-right: 54px;
+        }
+        /* --------------------------------------------- */
+       

@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    font-family:'Noto Sans TC', sans-serif,微軟正黑體,Arial, Helvetica, sans-serif;
+}
+
+/* html,body {
+    padding: 0;
+    margin: 0;
+ } */
+
+.webcontainer3{
+    padding-top: 100px;
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: auto;                               /*佳文改*/
+}
+
+
+/* --------海浪-------*/
+.svg-kv-wave{
+    width: 100%;
+    position: absolute;
+    top:0px;
+}
+
+/* --------footer內容-------*/
+
+footer,.copyright {
+    background-image: url(../img/bg.png);
+}
+
+.footer-container{
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    padding: 170px 0 98px 0;
+    
+}
+
+footer {
+    position: relative;
+    border-bottom: 1px solid #AFAFAF;
+}
+
+.copyright {
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.copyright-p {
+    margin: 0 auto;
+    max-width: 1024px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    height: 82px;
+}
+
+.social-software,
+.web-map-aboutus,
+.web-map-info {
+    /* margin: 0 125px 0 0; */
+    margin: 0 ;
+}
+
+
+.service-info {
+    margin: 0 0 0 0;
+}
+
+.social-software {
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.social-software-p {
+    color: #043F98;
+    font-size: 1.1250rem;
+    margin: 22px 0 0 0;
+}
+
+
+.footer-icon-img {
+    height: 40px;
+    margin: 40px 22px;
+}
+
+.icon-phone-img {
+    height: 28px;
+    margin: 0;
+}
+
+.web-map,
+.web-map-a {
+    display: flex;
+    color: #3F464D;
+}
+
+.web-map-p {
+    font-size: 1rem;
+    margin: 65px 0 0;
+}
+
+.web-map-a {
+    font-size: 0.75rem;
+    margin: 23px 0 0 0;
+}
+
+.web-map-a:hover{
+    text-decoration: none;
+    color: #043F98;
+}
+
+.web-map-aboutus{
+    margin: 0 80px 0 0;
+}
+
+.web-map-aboutus,
+.web-map-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-info-p1,
+.service-info-p2,
+.service-info-p3 {
+    color: #043F98;
+    font-size: 1rem;
+}
+
+.service-info-p1 {
+    margin: 72px 0 0 0;
+}
+
+.service-info-p2 {
+    margin: 20px 0 0 0;
+}
+
+.service-info-p3 {
+    font-size: 1.5rem;
+    margin: 20px 0 25px 0;
+}
+
+.service-info-p4 {
+    color: #777777;
+    font-size: 0.875rem;
+}
+
+.copyright-p{
+    width: 100%;
+    /* text-align: center; */
+}
+
+
+/* --------RWD(開始)-------*/
+
+@media screen and (max-width:768px){
+
+    .svg-kv-wave{
+        width: 100%;
+        height: 10%;
+    }
+    
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 190px 0px 50px ;
+    }
+
+    .social-software,.web-map,.web-map-info{
+        margin: 0 auto;
+    }
+
+    .footer-icon-img {
+        margin: 40px 20px;
+    }
+
+   .web-map-aboutus{
+        margin: 0 20px 0 0;
+    }
+    
+    .service-info-p3,.service-info-p4,.copyright-p {
+        text-align: center;
+    }
+   
+    .web-map-p{
+        margin: 40px 0 0 0;
+    }
+
+    .copyright {
+        margin: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 ;
+    }
+
+}
+
+/* --------RWD(結束)-------*/

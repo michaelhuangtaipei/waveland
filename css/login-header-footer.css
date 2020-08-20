@@ -1,0 +1,468 @@
+/* -----header框架(開始)----- */
+header{
+width: 100%;
+position: fixed;
+top:0;
+background-color: #ffffff;
+z-index: 99;
+box-shadow: 0px 3px 6px  rgba(110, 110, 110, 0.267);
+}
+
+.headerContainer {
+margin: 0 auto;
+max-width: 1024px;
+width: 100%;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+/* -----header框架(結束)----- */
+
+
+
+/* -----左側LOGO + 搜尋bar樣式(開始)----- */
+.header-img {
+height: 20px;
+margin: 0 0 0 30px;
+}
+
+.icon-search{
+margin: 0;
+}
+
+.header-logo {
+height: 30px;
+margin: 0 58px 0 0 ;
+}
+
+.search-content,
+.search-btn {
+height: 28px;
+border: none;
+background-color: transparent;
+}
+
+.search-content {
+width: 280px;
+border-bottom: 1px solid #043F98;
+outline: none;
+}
+
+::placeholder{
+color: #afafaf;
+font-family:'Noto Sans TC', sans-serif,微軟正黑體,Arial, Helvetica, sans-serif;
+}
+
+
+.fas {
+font-size: 1.25rem;
+color: #043F98;
+}
+/* -----左側LOGO + 搜尋bar樣式(結束)----- */
+
+
+
+
+/* -----右側icon(開始)----- */
+.header-grop,.header-icon-group{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+/* -----右側icon(結束)----- */
+
+
+
+
+/* -----menu-內容(開始)----- */
+#sidebarMenu {
+height: calc(100vh - 60px);
+position: fixed;
+right: 0;
+top:60px;
+width: 375px;
+transform: translateX(375px);
+transition: transform 250ms ease-in-out;
+background:rgb(255, 255, 255);
+box-shadow: 0px 3px 6px  rgba(110, 110, 110, 0.267);
+}
+
+.sidebarMenuInner{
+padding: 0;
+margin: 0;
+}
+
+.sidebarMenuInner-li {
+margin: 50px 20px;
+list-style: none;
+text-align: center;
+text-transform: uppercase;
+/* font-weight: bold; */
+cursor: pointer;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.sidebarMenuInner-a{
+font-size: 1rem;
+text-decoration: none;
+text-transform: uppercase;
+color: #043F98;
+align-items: center;
+}
+
+.sidebarMenu-icon{
+height: 14px;
+margin: 0 15px;
+}
+
+.socialSoftware-icon-group{
+/* background-color: rgb(120, 120, 141); */
+display: flex;
+justify-content: center;
+position:absolute;
+bottom: 5%;
+width: 100%;
+
+}
+
+.socialSoftware-icon{
+height: 25px;
+margin: 0 10px;
+
+}
+
+
+/* -----menu-內容(結束)----- */
+
+
+
+/* -----menu-icon外觀(開始)----- */
+
+.sidebarIconToggle {
+transition: all 0.3s;
+box-sizing: border-box;
+cursor: pointer;
+z-index: 99;
+width: 100%;
+margin: 0 0 0 30px;
+top: 22px;
+width: 22px;
+}
+
+.spinner {
+transition: all 0.3s;
+box-sizing: border-box;
+position: absolute;
+height: 3px;
+width: 100%;
+background-color: #043F98;
+}
+
+.horizontal {
+transition: all 0.3s;
+box-sizing: border-box;
+position: relative;
+float: left;
+margin-top: 3px;
+}
+
+.diagonal.part-1 {
+position: relative;
+transition: all 0.3s;
+box-sizing: border-box;
+float: left;
+}
+
+.diagonal.part-2 {
+transition: all 0.3s;
+box-sizing: border-box;
+position: relative;
+float: left;
+margin-top: 3px;
+}
+
+
+header input[type="checkbox"]:checked~#sidebarMenu {
+transform: translateX(0);
+}
+
+header input[type=checkbox] {
+transition: all 0.3s;
+box-sizing: border-box;
+display: none;
+}
+
+/* -----menu-icon外觀(結束)----- */
+
+
+
+
+/* -----menu-icon交叉動態(開始)----- */
+header input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+transition: all 0.3s;
+box-sizing: border-box;
+opacity: 0;
+}
+
+header input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+transition: all 0.3s;
+box-sizing: border-box;
+transform: rotate(135deg);
+margin-top: 8px;
+}
+
+header input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+transition: all 0.3s;
+box-sizing: border-box;
+transform: rotate(-135deg);
+margin-top: -9px;
+}
+
+/* -----menu-icon交叉動態(結束)----- */
+
+
+
+/* --------RWD(開始)-------*/
+
+@media screen and (max-width:1024px){
+.headerContainer{
+padding: 0 20px;
+}
+
+.header-logo {
+margin: 0;
+}
+
+}
+
+
+@media screen and (max-width:768px){
+.search-content,.search-btn{
+display: none;
+}
+}
+
+/* --------header RWD(結束)-------*/
+
+
+/*---------------footer-----------  */
+* {
+box-sizing: border-box;
+font-family:'Noto Sans TC', sans-serif,微軟正黑體,Arial, Helvetica, sans-serif;
+}
+
+html,body {
+padding: 0;
+margin: 0;
+}
+
+footer .webcontainer{
+position: relative;
+max-width: 1024px;
+margin: 0 auto;
+height: 50vh;
+}
+
+
+/* --------海浪-------*/
+.svg-kv-wave{
+width: 100%;
+position: absolute;
+/* top: 0; */
+bottom: 85%;
+}
+
+/* --------footer內容-------*/
+
+footer,
+.copyright {
+width: 100%;
+background-image: url("../img/bg.png");
+}
+
+.footer-container{
+margin: 0 auto;
+max-width: 1024px;
+display: flex;
+justify-content: space-between;
+padding: 170px 0 98px 0;
+
+}
+
+footer {
+position: relative;
+border-bottom: 1px solid #AFAFAF;
+}
+
+.copyright {
+margin: 0 auto;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+}
+
+.copyright-p {
+margin: 0 auto;
+max-width: 1024px;
+align-items: center;
+justify-content: space-between;
+}
+
+.footer-logo {
+height: 82px;
+}
+
+.social-software,
+.web-map-aboutus,
+.web-map-info {
+/* margin: 0 125px 0 0; */
+margin: 0 ;
+}
+
+
+.service-info {
+margin: 0 0 0 0;
+}
+
+.social-software {
+text-align: center;
+align-items: center;
+position: relative;
+}
+
+.social-software-p {
+color: #043F98;
+font-size: 1.1250rem;
+margin: 22px 0 0 0;
+font-weight: 400;
+}
+
+
+.footer-icon-img {
+height: 40px;
+margin: 40px 22px;
+}
+
+.icon-phone-img {
+height: 28px;
+margin: 0;
+}
+
+.web-map,
+.web-map-a {
+display: flex;
+color: #3F464D;
+}
+
+.web-map-p {
+font-size: 1rem;
+margin: 65px 0 0;
+font-weight: 400;
+}
+
+.web-map-a {
+font-size: 0.75rem;
+margin: 23px 0 0 0;
+}
+
+.web-map-a:hover{
+text-decoration: none;
+color: #043F98;
+}
+
+.web-map-aboutus{
+margin: 0 80px 0 0;
+}
+
+.web-map-aboutus,
+.web-map-info {
+display: flex;
+flex-direction: column;
+}
+
+.service-info-p1,
+.service-info-p2,
+.service-info-p3 {
+color: #043F98;
+font-size: 1rem;
+font-weight: 400;
+}
+
+.service-info-p1 {
+margin: 72px 0 0 0;
+}
+
+.service-info-p2 {
+margin: 20px 0 0 0;
+}
+
+.service-info-p3 {
+font-size: 1.5rem;
+margin: 20px 0 25px 0;
+}
+
+.service-info-p4 {
+color: #777777;
+font-size: 0.875rem;
+}
+
+.copyright-p{
+width: 100%;
+/* text-align: center; */
+}
+
+
+/* --------RWD(開始)-------*/
+
+@media screen and (max-width:800px){
+
+.svg-kv-wave{
+width: 100%;
+/* height: 10%; */
+bottom: 93%;
+}
+
+
+.footer-container{
+flex-direction: column;
+align-items: center;
+padding: 190px 0px 50px ;
+}
+
+.social-software,.web-map,.web-map-info{
+margin: 0 auto;
+}
+
+.footer-icon-img {
+margin: 40px 20px;
+}
+
+.web-map-aboutus{
+margin: 0 20px 0 0;
+}
+
+.service-info-p3,.service-info-p4,.copyright-p {
+text-align: center;
+}
+
+.web-map-p{
+margin: 40px 0 0 0;
+}
+
+.copyright {
+margin: 0;
+height: 60px;
+display: flex;
+align-items: center;
+padding: 0 ;
+}
+
+}
+
+/* --------RWD(結束)-------*/

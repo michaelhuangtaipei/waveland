@@ -1,0 +1,477 @@
+body {
+    box-sizing: border-box;
+    background: #DFF1FB;
+    font-family: 'Noto Sans TC', sans-serif, 微軟正黑體, Arial, Helvetica, sans-serif;
+}
+.kv {
+    background: url("../img/2-kv.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.kv-wave-bottom {
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+    opacity: 60%;
+    width: 100%;
+    height: 200px
+}
+
+.kv-wave-top {
+    position: absolute;
+    bottom: -90px;
+    height: 250px;
+    width: 100%
+}
+
+.kv-logo-1 {
+    max-width: 350px;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+
+.webcontainer1 {
+    width: 100%;
+    padding: 0 128px;
+    position: absolute;
+    bottom: -50px;
+}
+
+
+.search-text {
+    text-indent: 5px;
+}
+
+.productList-search {
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+}
+
+.kv select {
+    outline: none;
+    border: 1px solid transparent;
+    color: #043F98;
+    font-size: 14px;
+    width: 100%;
+}
+
+.themeDiv {
+    padding-bottom: 5px;
+    width: 40%;
+    flex-grow: 1;
+    border-bottom: 1px solid #043F98;
+    margin-bottom: 10px;
+}
+
+.productlist-selecter {
+    border-right: 1px solid #043F98;
+}
+
+a.S-btn {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background: #043F98;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.S-btn img {
+    height: 80%;
+    line-height: 30px;
+    object-fit: contain;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .webcontainer1 {
+        bottom: -80px;
+    }
+
+    .themeDiv {
+        width: 100%;
+        min-width: 200px;
+    }
+
+    .productList-search {
+        flex-direction: column;
+    }
+
+    a.S-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .webcontainer1 {
+        width: 100%;
+        padding: 0 15px;
+        position: absolute;
+        bottom: -250px;
+    }
+
+    .themeDiv {
+        margin-bottom: 50px;
+    }
+
+
+}
+
+.bread {
+    position: absolute;
+    bottom: -100px;
+    margin-left: 128px;
+}
+
+.ad-1 {
+    width: 100%;
+    height: 160px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 375px) {
+    .bread {
+        display: none;
+    }
+
+    .ad-1 {
+        padding: 0 15px;
+        flex-direction: column;
+        margin-top: 50px;
+        height: 250px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .kv-wave-top {
+        height: 200px;
+        bottom: -60px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .kv {
+        height: 260px;
+        background: url("../img/2-kv.jpg") center bottom no-repeat;
+        background-size: cover
+    }
+
+    .kv-logo-1 {
+        display: none;
+    }
+
+    .kv-wave-top {
+        height: 130px;
+        bottom: -50px;
+    }
+
+    .kv-wave-bottom {
+        height: 180px;
+        bottom: -100px;
+    }
+}
+
+
+.svg-wave-bottom {
+    width: 100%;
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+
+.h1-bg {
+    max-width: 1024px;
+    margin: 0 auto 0px;
+    background: url("../svg/svg-h2-1.svg") center center no-repeat;
+    display: flex;
+}
+
+.h1-blue {
+    color: #043F98;
+    font-weight: bold;
+}
+@media screen and (max-width: 375px){
+    .h1-blue{
+        font-size: 32px;
+    }
+}
+
+.ad-4 {
+    width: 100%;
+    position: relative;
+    padding-top: 80px;
+    margin-bottom: 10px;
+
+}
+
+.ad-4 .h1-bg {
+    background: none;
+    padding-bottom: 50px;
+
+}
+
+.ad-4 .list-wrapper-big {
+    background: url(../svg/svg-bg-string.svg) center top;
+    background-size: cover;
+    margin: 0 auto;
+
+}
+
+
+.ad-4 .webcontainer {
+    max-width: 1024px;
+    margin: 0 auto ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ad-4 select {
+    outline: none;
+}
+
+.list-selecter {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.list-selecter-title {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.list-selecter .form-list {
+    background: transparent;
+    color: #043F98;
+    border: 1px solid transparent;
+}
+
+@media screen and (max-width: 800px) {
+    .ad-4 {
+        padding: 40px 0;
+    }
+
+    .ad-4 .h1-bg {
+        background: #DFF1FB;
+        margin-bottom: 0;
+    }
+
+    .ad-4 .webcontainer {
+        padding: 0 15px;
+    }
+
+}
+
+/* --------揪團列表頁 card3 商品小卡--------*/
+
+.card3 {
+    max-width: 328px;
+    width: 33%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.card3Top {
+    width: 100%;
+    height: 219px;
+    background: url("../img/2-kv.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.card-img-top {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3Down {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.card3DownBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card3title {
+    font-size: 18px;
+    font-weight: 100;
+    width: 100%;
+
+}
+a.card3title {
+    text-decoration: none;
+    color: black;
+}
+.card3IntroText p {
+    padding-top: 15px;
+    font-size: 12px;
+    text-align: left;
+    color: #707070;
+    font-weight: 100;
+}
+
+.card3IntroIcon {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    max-width: 300px;
+}
+
+
+.card3Icon {
+    display: flex;
+    color: #707070;
+    padding-top: 6px;
+    padding-right: 30px;
+}
+
+.card3Icon img {
+    margin-right: 8px;
+}
+
+.card3Price {
+    display: flex;
+    align-items: center;
+}
+
+.card3Price p {
+    color: #043F98;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: end;
+}
+
+.card3Price .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .card3 {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto 15px;
+        display: flex;
+        min-height: 140px;
+
+    }
+
+
+    .card3Top {
+        width: 35%;
+        height: 100%;
+        min-width: 140px;
+
+    }
+
+    .card3Down {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .card3DownBox {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+
+    }
+
+    .card3title {
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    .card3name p {
+        margin: auto auto;
+    }
+
+    .card3IntroText p {
+        line-height: 1.5rem;
+        color: #3f464d;
+        font-size: 12px;
+        padding-top: 6px;
+
+    }
+
+    .card3IntroIcon {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 260px;
+
+    }
+
+    .card3IntroIcon img {
+        margin-right: 5px;
+    }
+
+    .card3IntroIcon p {
+        font-size: 12px;
+        color: #3f464d;
+        line-height: 1.5;
+
+    }
+
+    .card3Price {
+        font-size: 14px;
+        font-weight: normal;
+        align-self: flex-end;
+    }
+
+    .card3Price .price {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 5px;
+        line-height: 1.5;
+    }
+}
+
+/* -------------card3 CSS結束 ---------------*/
+
+.priceNheart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cls-1 {
+    fill: none;
+    stroke: #afafaf;
+    stroke-miterlimit: 10;
+}
+.active {
+    fill: indianred;
+    stroke:none;
+}
